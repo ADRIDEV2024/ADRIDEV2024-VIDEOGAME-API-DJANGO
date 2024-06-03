@@ -1,0 +1,65 @@
+
+"videogames":  [
+                
+     {  
+        "id": 1,
+        "title": "Fatal Fury: King of Fighters",
+        "game_studio": "SNK",
+        "creator": "Takashi Tsukamoto",
+        "genre": "Fighting",
+        "description": "The plot of Fatal Fury centers on a martial arts tournament known as the King of Fighters tournament, which takes place in the fictional city of South City and is sponsored by local crime boss Geese Howard. Ten years prior to the events of the video game, Geese murdered a rival martial artist named Jeff Bogard who was in his way. Now, Jeff's adopted sons Terry and Andy, along with their friend Joe Higashi, enter the tournament to get revenge on Geese.",
+        "published_date": 25-11-1991,
+        "steam_price": "unknown"
+    },
+    
+    { 
+        "id": 2,
+        "title": "The Last of Us Part I",
+        "game_studio": "Naughty Dog",
+        "creator": "Neil Druckmann",
+        "genre": "Action and adventure",
+        "description": "The Last of Us is set in a post-apocalyptic world where a parasitic fungus, known as Cordyceps, has infected most of the human population, turning them into cannibalistic creatures. The game follows Joel, a smuggler, and Ellie, a teenage daughter figure, as they journey across the United States in an attempt to find a cure for the infection.",
+        "published_date": 14-06-2013,
+        "steam_price": 59.99
+    
+    },
+    
+    { 
+        "id": 3,
+        "title": "Fallout 4",
+        "game_studio": "Bethesda Game Studios",
+        "creator": "Todd Howard",
+        "genre": "Action RPG",
+        "description": "Fallout 4 is set in a post-apocalyptic world where the player character emerges from an underground bunker known as a Vault and must navigate the wasteland of the Commonwealth in search of their missing son. The game features a vast open world to explore, with a variety of factions to interact with and choices to make that affect the outcome of the story.",
+        "published_date": 10-11-2015,
+        "steam_price": 19.99
+    
+    
+    },
+
+    { 
+        "id": 4,
+        "title": "Cities: Skylines",
+        "game_studio": "Colossal Order",
+        "creator": "Mariina Hallikainen",
+        "genre": "City-building",
+        "description": "Cities: Skylines is a city-building simulation game that allows players to create and manage their own virtual city. The game features a variety of tools and options for building and customizing the city, including zoning, road construction, and public services. Players must manage the city's budget and resources to ensure the happiness and well-being of its citizens.",
+        "published_date": 10-03-2015,
+        "steam_price": 9.99
+    
+    
+    },
+
+    { 
+        "id": 5,
+        "title": "Super Mario Bros 3",
+        "game_studio": "Nintendo",
+        "creator": "Shigeru Miyamoto",
+        "genre": "Platformer",
+        "description": "Super Mario Bros 3 is a platformer game that follows the adventures of Mario and Luigi as they travel through the Mushroom Kingdom to rescue Princess Toadstool from the evil Bowser. The game features a variety of power-ups and abilities for the player to use, as well as a world map that allows them to choose their own path through the game.",
+        "published_date": 23-10-1988,
+        "steam_price": "unknown"
+    }
+]
+
+     
