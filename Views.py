@@ -7,10 +7,10 @@ from videogames.serializers import VideogameSerializer
 from rest_framework.decorators import api_view
 
 
-@api_view(['GET', 'POST', 'DELETE'])
+Api_view(['GET', 'POST', 'DELETE'])
 def videogame_list(request):
  if request.method == 'GET':
-        tutorials = Videogame.objects.all()
+        game_data = Videogame.objects.all()
         
         title = request.query_params.get('title', None)
         if title is not None:
