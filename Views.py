@@ -27,6 +27,25 @@ def videogame_list(request):
             return JsonResponse(game_serializer.data, status=status.HTTP_201_CREATED) 
         return JsonResponse(game_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+ @api_view(['GET', 'PUT', 'DELETE'])
+def videogame_detail(request, pk):
+    try: 
+        videogame = Videogame.objects.get(pk=pk) 
+    except Videogame.DoesNotExist: 
+        return JsonResponse({'message': 'Oops, the videogame you´re looking for does not exist'}, status=status.HTTP_404_NOT_FOUND) 
+ 
+    if request.method == 'GET': 
+        videogame_serializer = VideogameSerializer(videogame) 
+        return JsonResponse(videogame_serializer.data) 
+ 
+    elif request.method == 'PUT': 
+        videogame_data = JSONParser().parse(request) 
+        videogame_serializer = VideogameSerializer(videogame, data=game_data) 
+        if videogame_serializer.is_valid(): 
+            videogame_serializer.save() 
+            return JsonResponse(videogame_serializer.data) 
+        return JsonResponse(videogame_serializer.errors, status=status.HTTP_400_BAD_REQUEST) 
+
  if request.method == 'DELETE': 
         videogame.delete() 
         return JsonResponse({'message': 'This game was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
