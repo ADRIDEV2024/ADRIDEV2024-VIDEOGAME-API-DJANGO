@@ -7,7 +7,7 @@ from videogames.serializers import VideogameSerializer
 from rest_framework.decorators import api_view
 
 
-Api_view(['GET', 'POST', 'DELETE'])
+@api_view(['GET', 'POST', 'DELETE'])
 def videogame_list(request):
  if request.method == 'GET':
         game_data = Videogame.objects.all()
