@@ -19,10 +19,14 @@ def videogame_list(request):
         videogames_serializer = VideogameSerializer(videogames, many=True)
         return JsonResponse(videogames_serializer.data, safe=True)
     
- elif request.method == 'POST':
+ if request.method == 'POST':
         game_data = JSONParser().parse(request)
         game_serializer = VideogameSerializer(data=game_data)
         if game_serializer.is_valid():
             game_serializer.save()
             return JsonResponse(game_serializer.data, status=status.HTTP_201_CREATED) 
         return JsonResponse(game_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+ if request.method == 'DELETE': 
+        videogame.delete() 
+        return JsonResponse({'message': 'This game was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
