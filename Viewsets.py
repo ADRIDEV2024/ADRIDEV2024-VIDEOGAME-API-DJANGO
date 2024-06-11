@@ -2,11 +2,11 @@ from .models import Videogame
 from rest_framework import viewset, permissions
 from .serializers import VideogameSerializer
 
-class VideogameViewSet(viewsets.ModelViewSet):
+class VideogameViewSet():
     """""
     This class is for retrieve the data we want to query,only for 
     authenticated people
     """""
-    queryset = Videogame.get.all()
+    queryset = Videogame.objects.all()
     permissions = [permissions.IsAuthenticated]
     serializer_class = VideogameSerializer
