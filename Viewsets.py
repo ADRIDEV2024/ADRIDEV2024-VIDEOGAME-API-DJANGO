@@ -7,6 +7,6 @@ class VideogameViewSet(viewsets.ModelViewSet):
     This class is for retrieve the data we want to query,only for 
     authenticated people
     """""
-    queryset = Videogame.objects.all()
+    queryset = Videogame.get.all()
     permissions = [permissions.IsAuthenticated]
     serializer_class = VideogameSerializer
