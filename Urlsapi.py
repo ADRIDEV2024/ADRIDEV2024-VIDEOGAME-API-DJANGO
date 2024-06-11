@@ -3,6 +3,6 @@ from .Viewsets import VideogameViewSet
 
 router = routers.DefaultRouter()
 
-router.register('Djangoapi/videogames', VideogameViewSet, 'videogames')
+router.register('api/videogames', VideogameViewSet, name= 'videogames')
 
 urlpatterns = router.urls
