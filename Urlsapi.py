@@ -3,6 +3,6 @@ from .Viewsets import VideogameViewSet
 
 router = routers.DefaultRouter()
 
-router.register('api/videogames', VideogameViewSet, name= 'videogames')
+router.register('api/videogames', VideogameViewSet, 'videogames')
 
 urlpatterns = router.urls
