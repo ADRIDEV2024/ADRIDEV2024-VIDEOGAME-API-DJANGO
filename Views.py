@@ -7,12 +7,12 @@ from videogames.serializers import VideogameSerializer
 from rest_framework.decorators import api_view
 
 
-@api_view(['GET', 'POST', 'DELETE'])
+@api_view(['GET', 'POST'])
 def videogame_list(request):
  if request.method == 'GET':
         game_data = Videogame.objects.all()
         
-        title = request.query_params.get('title', None)
+        title = request.query_params.get('title')
         if title is not None:
             videogames = videogames.filter(title__icontains=title)
         
