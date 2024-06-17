@@ -6,9 +6,10 @@ class VideogameSerializer(serializers.ModelSerializer):
     """""
     This class will manage serialization and deserialization
     instructions from a Json format
+    
     """""
     
-  
+  class Meta:
         
         model = Videogame
         fields = ("id",
