@@ -8,7 +8,7 @@ class VideogameSerializer(serializers.ModelSerializer):
     instructions from a Json format
     """""
     
-    class Meta:
+  
         
         model = Videogame
         fields = ("id",
