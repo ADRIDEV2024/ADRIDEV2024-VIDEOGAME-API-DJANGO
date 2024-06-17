@@ -7,12 +7,12 @@ from videogames.serializers import VideogameSerializer
 from rest_framework.decorators import api_view
 
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST', "DELETE"])
 def videogame_list(request):
  if request.method == 'GET':
         game_data = Videogame.objects.all()
         
-        title = request.query_params.get('title')
+        title = request.query_params.get('title', None)
         if title is not None:
             videogames = videogames.filter(title__icontains=title)
         
@@ -21,7 +21,7 @@ def videogame_list(request):
     
  if request.method == 'POST':
         game_data = JSONParser().parse(request)
-        game_serializer = VideogameSerializer(data=game_data)
+        game_serializer = VideogameSerializer()
         if game_serializer.is_valid():
             game_serializer.save()
             return JsonResponse(game_serializer.data, status=status.HTTP_201_CREATED) 
