@@ -55,9 +55,13 @@
         "game_studio": "Colossal Order",
         "creator": "Mariina Hallikainen",
         "genre": "City-building",
-        "description": "Cities: Skylines is a city-building simulation game that allows players to create and manage their own virtual city. The game features a variety of tools and options for building and customizing the city, including zoning, road construction, and public services. Players must manage the city's budget and resources to ensure the happiness and well-being of its citizens.",
+        "description": "Cities: Skylines is a city-building simulation game that allows players 
+         to create and manage their own virtual city. The game features a variety of tools and 
+         options for building and customizing the city, including zoning, road construction, and
+         public services. Players must manage the city's budget and resources to ensure the happiness
+         and well-being of its citizens.",
         "published_date": 10-03-2015,
-        "steam_price": 9.99
+        "steam_price": "unknown"
     
     
     },
