@@ -28,7 +28,7 @@
          creatures. The game follows Joel, a smuggler, and Ellie, a teenage daughter figure, as they 
          journey across the United States in an attempt to find a cure for the infection.",
         "published_date": 14-06-2013,
-        "steam_price": 59.99
+        "steam_price": "59.99$"
     
     },
     
@@ -44,7 +44,7 @@
          explore, with a variety of factions to interact with and choices to make that affect the 
          outcome of the story.",
         "published_date": 10-11-2015,
-        "steam_price": 19.99
+        "steam_price": "19.99$"
     
     
     },
@@ -61,7 +61,7 @@
          public services. Players must manage the city's budget and resources to ensure the happiness
          and well-being of its citizens.",
         "published_date": 10-03-2015,
-        "steam_price": "unknown"
+        "steam_price": "9.99$"
     
     
     },
@@ -72,7 +72,10 @@
         "game_studio": "Nintendo",
         "creator": "Shigeru Miyamoto",
         "genre": "Platformer",
-        "description": "Super Mario Bros 3 is a platformer game that follows the adventures of Mario and Luigi as they travel through the Mushroom Kingdom to rescue Princess Toadstool from the evil Bowser. The game features a variety of power-ups and abilities for the player to use, as well as a world map that allows them to choose their own path through the game.",
+        "description": "Super Mario Bros 3 is a platformer game that follows the adventures of Mario 
+         and Luigi as they travel through the Mushroom Kingdom to rescue Princess Toadstool from the 
+         evil Bowser. The game features a variety of power-ups and abilities for the player to use, as
+         well as a world map that allows them to choose their own path through the game.",
         "published_date": 23-10-1988,
         "steam_price": "unknown"
     }
