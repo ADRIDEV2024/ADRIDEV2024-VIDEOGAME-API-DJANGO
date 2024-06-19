@@ -23,7 +23,10 @@
         "game_studio": "Naughty Dog",
         "creator": "Neil Druckmann",
         "genre": "Action and adventure",
-        "description": "The Last of Us is set in a post-apocalyptic world where a parasitic fungus, known as Cordyceps, has infected most of the human population, turning them into cannibalistic creatures. The game follows Joel, a smuggler, and Ellie, a teenage daughter figure, as they journey across the United States in an attempt to find a cure for the infection.",
+        "description": "The Last of Us is set in a post-apocalyptic world where a parasitic fungus, 
+         known as Cordyceps, has infected most of the human population, turning them into cannibalistic 
+         creatures. The game follows Joel, a smuggler, and Ellie, a teenage daughter figure, as they 
+         journey across the United States in an attempt to find a cure for the infection.",
         "published_date": 14-06-2013,
         "steam_price": 59.99
     
