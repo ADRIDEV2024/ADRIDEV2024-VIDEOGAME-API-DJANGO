@@ -17,7 +17,7 @@ def videogame_list(request):
             videogames = videogames.filter(title__icontains=title)
         
         videogames_serializer = VideogameSerializer(videogames, many=True)
-        return JsonResponse(videogames_serializer.data, )
+        return JsonResponse(videogames_serializer.data, safe=True)
     
  if request.method == 'POST':
         game_data = JSONParser().parse(request)
