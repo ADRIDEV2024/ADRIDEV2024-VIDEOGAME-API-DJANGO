@@ -17,7 +17,7 @@ def videogame_list(request):
             videogames = videogames.filter(title__icontains=title)
         
         videogames_serializer = VideogameSerializer(videogames, many=True)
-        return JsonResponse(videogames_serializer.data, safe=True)
+        return JsonResponse(videogames_serializer.data, )
     
  if request.method == 'POST':
         game_data = JSONParser().parse(request)
@@ -44,7 +44,7 @@ def videogame_detail(request, pk):
         if videogame_serializer.is_valid(): 
             videogame_serializer.save() 
             return JsonResponse(videogame_serializer.data) 
-        return JsonResponse(videogame_serializer.errors, status=status.) 
+        return JsonResponse(videogame_serializer.errors, status=status.HTTP_400_BAD__REQUEST) 
 
  if request.method == 'DELETE': 
         videogame.delete() 
