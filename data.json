@@ -38,9 +38,13 @@
         "game_studio": "Bethesda Game Studios",
         "creator": "Todd Howard",
         "genre": "Action RPG",
-        "description": "Fallout 4 is set in a post-apocalyptic world where the player character emerges from an underground bunker known as a Vault and must navigate the wasteland of the Commonwealth in search of their missing son. The game features a vast open world to explore, with a variety of factions to interact with and choices to make that affect the outcome of the story.",
+        "description": "Fallout 4 is set in a post-apocalyptic world where the player character 
+         emerges from an underground bunker known as a Vault and must navigate the wasteland of 
+         the Commonwealth in search of their missing son. The game features a vast open world to 
+         explore, with a variety of factions to interact with and choices to make that affect the 
+         outcome of the story.",
         "published_date": 10-11-2015,
-        "steam_price": 19.99
+        "steam_price": 39.99
     
     
     },
