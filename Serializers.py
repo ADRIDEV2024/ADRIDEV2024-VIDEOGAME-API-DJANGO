@@ -18,4 +18,5 @@ class VideogameSerializer(serializers.ModelSerializer):
                   "description",
                   "published_date",
                   "steam_price")
-        read_only_fields = ("published_date","creator","genre")
+      
+        read_only_fields = (fields)
