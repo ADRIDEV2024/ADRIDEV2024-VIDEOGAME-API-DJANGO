@@ -9,7 +9,7 @@ class VideogameSerializer(serializers.ModelSerializer):
     """""
     
   class Meta:
-        model = Videogame()
+        model = Videogame
         fields = ("id",
                   "title",
                   "creator",
