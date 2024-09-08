@@ -8,7 +8,7 @@ class Videogame(models.Model):
     creator = models.CharField(max_length=50, blank=False, default=None)
     genre = models.CharField(max_length=50, default=None)
     description = models.TextField(max_length=400,blank=False, default=None)
-    published_date = models.DateTimeField(default=None, auto_now_add=False)
+    published_date = models.DateTimeField(default=None, auto_now_add=True)
     steam_price = models.FloatField(max_length=50, default=None)
     
     
