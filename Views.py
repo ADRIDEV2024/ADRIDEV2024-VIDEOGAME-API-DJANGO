@@ -2,7 +2,7 @@ from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser 
 from rest_framework import status
  
-from . import Videogame 
+from videogame.models import Videogame 
 from videogames.serializers import VideogameSerializer
 from rest_framework.decorators import api_view
 
