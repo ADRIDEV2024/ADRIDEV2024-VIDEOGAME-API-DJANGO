@@ -11,7 +11,6 @@ from rest_framework.decorators import api_view
 def videogame_list(request):
  if request.method == 'GET':
         game_data = Videogame.objects.all()
-        
         title = request.query_params.get('title', None)
         if title is not None:
             videogames = videogames.filter(title__icontains=title)
