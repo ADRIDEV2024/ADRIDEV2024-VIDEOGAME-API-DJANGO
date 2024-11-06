@@ -26,7 +26,7 @@ def videogame_list(request):
             return JsonResponse(game_serializer.data, status=status.HTTP_201_CREATED) 
         return JsonResponse(game_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
- @api_view(['GET', 'PUT', 'DELETE'])
+ @api_view(['GET', 'PUT'])
 def videogame_detail(request, pk):
     try: 
         videogame = Videogame.objects.get(pk=pk) 
