@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Videogame(models.Model):
+class VideogameDetails(models.Model):
     
     title = models.CharField(max_length=100, blank=False, default=None)
     game_studio = models.CharField(max_length=100, blank=False, default=None)
