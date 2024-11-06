@@ -44,6 +44,6 @@ def videogame_detail(request, pk):
             return JsonResponse(videogame_serializer.data) 
         return JsonResponse(videogame_serializer.errors, status=status.HTTP_400_BAD__REQUEST) 
 
- if request.method == 'DELETE': 
+    if request.method == 'DELETE': 
         videogame.delete() 
         return JsonResponse({'message': 'This game was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
